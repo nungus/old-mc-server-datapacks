@@ -56,7 +56,24 @@ They have not been added to all files.
 - `/trigger spawnwarp` - Travel to the world spawnpoint.
 - `/trigger spawnpoint.set` - Set your own spawnpoint.
 - `/trigger spawnpoint.trav` - Travel to your own spawnpoint.
+---
+A Warp ball is a static snowball entity. You may ask, is all the information about the Warp stored in the snowball?<br>
+That's a very specific question you're asking me... But the answer is no.<br>
+Why not?<br>
+Wow, you're curious, aren't you?
 
+### Warp ball transmitters
+A Warp ball does not contain the vital information about the Warp because it is not always rendered - it exists at the location of the Warp, so its presence is at the mercy of a player being in its vicinity. This is a problem because players should be able to list all active Warps, and unrendered snowball entities aren't picked up.
+
+Instead, an invisible armour stand called a _transmitter_ is stored out-of-bounds in spawn chunks. That way, it is always rendered.<br>
+It contains the information about the Warp - location, flag to hide coordinates, password - as NBT data.<br>
+When configuring a Warp ball, the associated transmitter is being updated.
+When listing available Warps, all transmitters is consulted.
+
+When a player teleports to a Warp, the associated transmitter sets its location NBT to the stored coordinates, and in the same tick, teleports the player to itself before teleporting itself back to spawn.<br>
+This way, it is not de-rendered during the process.
+
+I would just set the player's NBT to the stored coordinates and have the transmitter be stationary, but the game doesn't allow you to modify player NBT data it deems "unstable."
 
 ## Boilerplate
 The MCFunctions contain a lot of boilerplate, some of it unnecessary, caused by the restricted programming environment and 2019 me being an amateur.
