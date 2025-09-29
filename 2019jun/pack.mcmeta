@@ -1,0 +1,18 @@
+{  
+   "pack":{  
+      "pack_format":1,
+      "description":[  
+         {  
+            "text":"executable functions to be run with ",
+            "color":"yellow"
+         },
+         {  
+            "text":"command blocks",
+            "color":"red"
+         }
+      ]
+   }
+}
+
+#~ redunant description
+#~ data/minecraft/tags/functions/tick.json calls functions every tick

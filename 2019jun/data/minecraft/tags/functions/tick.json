@@ -1,0 +1,18 @@
+{
+ "values": [
+ "general:tick_management",
+ "general:colour",
+ "general:xpgive",
+ "general:spawnwarp",
+ "oneplayersleep:ops",
+ "joinsensing:join_message",
+ "joinsensing:join_server",
+ "spawnpoint:spawnpoint_set",
+ "spawnpoint:spawnpoint_travel",
+ "purchasables:elytra",
+ "purchasables:shulker",
+ "purchasables:villager",
+ "deathsensing:kill_enderdragon",
+ "deathsensing:kill_wither"
+ ]
+}

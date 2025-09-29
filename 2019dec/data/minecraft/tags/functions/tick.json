@@ -1,0 +1,19 @@
+{
+	"values": [
+	"one_player_sleep:ops",
+	"ticks:tick_mang",
+	"ticks:glowing",
+	"ticks:help",
+	"teleportation:tpask",
+	"teleportation:spawnpoint",
+	"teleportation:warps",
+	"teleportation:spawntravel",
+	"shop:shop_menu",
+	"shop:elytra",
+	"shop:shulker_shell",
+	"shop:name_colours",
+	"shop:villager_egg",
+	"shop:warp_ball"
+	]
+}
+   
