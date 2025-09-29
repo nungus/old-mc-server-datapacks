@@ -1,3 +1,7 @@
+#~ 'colour.type' is a preset of colours - distinct values of colour.type are
+#~ intended to have different colour wheels, used in different mcfunctions.
+#~ however, the only colour.type preset that was used is colour.type=1.
+
 # meta
 scoreboard players enable @a colour.up
 scoreboard players enable @a colour.down
@@ -42,4 +46,5 @@ title @a[scores={colour.timer=1..,colour=13,colour.type=1}] subtitle [{"text":"b
 title @a[scores={colour.timer=1..,colour=14,colour.type=1}] subtitle [{"text":"brown","color":"dark_red"}]
 title @a[scores={colour.timer=1..,colour=15,colour.type=1}] subtitle [{"text":"green","color":"dark_green"}]
 title @a[scores={colour.timer=1..,colour=16,colour.type=1}] subtitle [{"text":"red","color":"red"}]
+
 title @a[scores={colour.timer=1..,colour=17,colour.type=1}] subtitle [{"text":"black","color":"black"}]
