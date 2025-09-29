@@ -93,7 +93,7 @@ The number of condition checks would still be reduced, though (by 63)!<br>
 All of that being said, it can be reasonable to just have duplicate conditions because they work and are compact to deal with.<br>
 This would be even more fine if you didn't run every command every tick... Every half-second or so would be appropriate, bar all the tick-driven animations.
 
-### Remarks
+## Remarks
 
 Some of the animations are over-the-top and take ages because they look cool (...no regrets). I've since come to appreciate snappier experiences - you'll get bored sooner or later when something is unnecessarily dragged out.
 
