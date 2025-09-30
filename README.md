@@ -67,10 +67,10 @@ A Warp ball does not contain the vital information about the Warp because it is 
 
 Instead, an invisible armour stand called a _transmitter_ is stored out-of-bounds in spawn chunks. That way, it is always rendered.<br>
 It contains the information about the Warp - location, flag to hide coordinates, password - as NBT data.<br>
-When configuring a Warp ball, the associated transmitter is being updated.
-When listing available Warps, all transmitters is consulted.
+When configuring a Warp ball, the associated transmitter is being updated.<br>
+When listing available Warps, all transmitters are consulted.
 
-When a player teleports to a Warp, the associated transmitter sets its location NBT to the stored coordinates, and in the same tick, teleports the player to itself before teleporting itself back to spawn.<br>
+When a player travels to a Warp, the associated transmitter copies the stored coordinates into its location NBT, and in the same tick, teleports the player to itself before teleporting itself back to spawn.<br>
 This way, it is not de-rendered during the process.
 
 I would just set the player's NBT to the stored coordinates and have the transmitter be stationary, but the game doesn't allow you to modify player NBT data it deems "unstable."
