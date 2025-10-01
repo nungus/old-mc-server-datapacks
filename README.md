@@ -73,7 +73,7 @@ When listing available Warps, all transmitters are consulted.
 When a player travels to a Warp, the associated transmitter copies the stored coordinates into its location NBT, and in the same tick, teleports the player to itself before teleporting itself back to spawn.<br>
 This way, it is not de-rendered during the process.
 
-I would just set the player's NBT to the stored coordinates and have the transmitter be stationary, but the game doesn't allow you to modify player NBT data it deems "unstable."
+I would just set the player's location NBT to the stored coordinates and have the transmitter be stationary, but the game doesn't allow you to modify player NBT data it deems "unstable."
 
 ## Boilerplate
 The MCFunctions contain a lot of boilerplate, some of it unnecessary, caused by the restricted programming environment and 2019 me being an amateur.
