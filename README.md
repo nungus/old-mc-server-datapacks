@@ -87,7 +87,7 @@ This is the only way to simulate scope - each line is simply a command so there 
 After hoisting, if multiple conditions are shared in the new MCFunction, they can just have more nested dispatches to more and more MCFunctions, and so on... But, this is exponential in the number of files. Albeit, you'd need an unrealistic number of shared/nested conditions for this to be too problematic.
 
 The required number of commands could end up being the same, though.
-For example, the block in [2019dec/data/shop/function/elytra.mcfunction](2019dec/data/shop/function/elytra.mcfunction) could have the `tag=elytraFirework` hoisted into a single check. But, the `Count:XXb` checks (to be placed in in another file) are already unique to each command, which require the same number of commands as before.
+For example, the block in [2019dec/data/shop/functions/elytra.mcfunction](2019dec/data/shop/functions/elytra.mcfunction) could have the `tag=elytraFirework` hoisted into a single check. But, the `Count:XXb` checks (to be placed in in another file) are already unique to each command, which require the same number of commands as before.
 The number of condition checks would still be reduced, though (by 63)!<br>
 
 All of that being said, it can be reasonable to just have duplicate conditions because they work and are compact to deal with.<br>
